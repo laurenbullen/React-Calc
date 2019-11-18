@@ -5,18 +5,30 @@
   display: inline-block;
   margin-left: 33.333%;
   margin-top: 50px;
+  
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
 }
 
 button {
   width: 25%;
   height: 60px;
-  font-size: 30px;
-  background-image: linear-gradient(red, orange);
-  border-color: black;
-  border-radius: 5px;
-  
+  font-size: 40px;
+  background-color: white;
+  border-color: rgb(128, 38, 68);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .clear {
-  width: 100%
+  width: 100%;
+  background-color: rgb(59, 59, 59);
+  color: white;
+}
+
+.operator {
+  background-color: rgb(255, 16, 76);
+  color: white;
 }
