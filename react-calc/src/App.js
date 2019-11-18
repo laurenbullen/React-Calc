@@ -11,14 +11,14 @@ class App extends React.Component {
     super();
 
     this.state = {
-      result: 0
+      result: ''
     }
   };
 
   onClick = button => {
     if (button === '='){
       this.calculate()
-    } else if (button === 'Clear') {
+    } else if (button === 'clear') {
       this.reset()
     } else {  
       this.setState({
@@ -35,7 +35,7 @@ class App extends React.Component {
 
   reset =()=> {
     this.setState({
-      result:""
+      result: ''
     })
   }
 
