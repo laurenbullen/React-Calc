@@ -1,22 +1,22 @@
-.App {
+.calc-body {
+  background-color: white;
+  width: 500px;
   text-align: center;
+  display: inline-block;
+  margin-left: 33.333%;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
+button {
+  width: 25%;
+  height: 60px;
+  font-size: 30px;
+  background-image: linear-gradient(red, orange);
+  border-color: black;
+  border-radius: 5px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+.clear {
+  width: 100%
 }
