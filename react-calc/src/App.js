@@ -4,17 +4,47 @@ import './App.css';
 import Header from './components/Header';
 import Results from './components/Results';
 import Keypad from './components/Keypad'
-import { Button } from 'react-bootstrap'
+
 
 class App extends React.Component {
+  constructor(){
+    super();
+
+    this.state = {
+      result: 0
+    }
+  };
+
+  onClick = button => {
+    if (button === '='){
+      this.calculate()
+    } else if (button === 'Clear') {
+      this.reset()
+    } else {  
+      this.setState({
+        result: this.state.result + button
+      })
+    }
+  };
+
+  calculate =()=>{
+    this.setState({
+      result: (eval(this.state.result) || "") + ""
+    })
+  }
+
+  reset =()=> {
+    this.setState({
+      result:""
+    })
+  }
+
   render () {
-
-
     return (
       <div>
         <div className='calc-body'>
           <Header />
-          {/* <Results  /> */}
+          <Results result={this.state.result} />
           <Keypad onClick={this.onClick}/>
         </div>
       </div>  

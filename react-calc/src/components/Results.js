@@ -3,7 +3,9 @@ import React from 'react';
 class Results extends React.Component {
     render(){
         return (
-            <p>Results Here</p>
+            <div className="results">
+                <p>{this.props.result}</p>
+            </div>
         )
     }
 }
