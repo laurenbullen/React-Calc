@@ -14,7 +14,13 @@ h1 {
 }
 
 .results {
-  color: red;
+  height: 60px;
+  width: 100%;
+  border-width: 10px;
+  border-color: rgb(128, 38, 68);
+  background-color: rgb(161, 161, 161);
+  color: rgb(253, 252, 252);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 40px;
 }
 
